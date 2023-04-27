@@ -1,0 +1,42 @@
+body {
+    color: #333333;
+}
+
+.main-content {
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    padding: 10px;
+}
+
+.portrait {
+    width: 300px;
+}
+
+header {
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+header a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: #888888;
+    font-size: 22px;
+}
+
+form {
+    margin-bottom: 16px;
+}
+
+
+
