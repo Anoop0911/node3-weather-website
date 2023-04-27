@@ -15,7 +15,9 @@ const forecast = (latitude, longitude, callback) => {
             const temperature = body.current.temperature 
             const apparentTemperature = body.current.feelslike
             const humidity = body.current.humidity
-            callback(undefined, weather + '. It is currently ' + temperature + ' degrees out. It feels like ' + apparentTemperature + ' degrees out and the humidity is ' + humidity + '.')
+            const dayTime = (body.current.is_day == 'no')?'Night Time':'Day Time'
+            const rainProbability = body.current.precip * 100
+            callback(undefined, weather + '. It is currently ' + temperature + ' degrees out. It feels like ' + apparentTemperature + ' degrees out and the humidity is ' + humidity + '%. Also, right now it is ' + dayTime + ' and there is ' + rainProbability + '% chance of rain.')
         }
     })
 }
